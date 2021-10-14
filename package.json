@@ -4,7 +4,7 @@
   "description": "Read Me Generator",
   "main": "index.js",
   "scripts": {
-    "test": "go"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kdassign/HW9/issues"
   },
-  "homepage": "https://github.com/kdassign/HW9#readme"
+  "homepage": "https://github.com/kdassign/HW9#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
