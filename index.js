@@ -1,8 +1,9 @@
+// these are the packages that are needed for the application
 const inq = require('inquirer');
 const fs = require('fs');
 const genMD = require('./utils/genMarkdown.js');
 
-
+// questions array that will require the user to input answers to them 
 const questions = [
     {
         type: 'input',
@@ -62,14 +63,14 @@ const questions = [
 
 ];
 
-
+// will write the README file after user input is done
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log("Successfully created README file! Please check the directory")
     );
 };
 
-
+// initiliazes application
 function init() {
     inq.prompt(questions).then((data) => {
 

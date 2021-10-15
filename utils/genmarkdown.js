@@ -1,3 +1,4 @@
+// license badge will return based on which one is choosen by the user 
 function renderLicenseBadge(license) {
     switch (license) {
       case "MIT":
@@ -12,7 +13,7 @@ function renderLicenseBadge(license) {
     }
   
   }
-
+// returns license link after user choice
   function renderLicenseLink(license) {
   
     switch (license) {
@@ -29,7 +30,7 @@ function renderLicenseBadge(license) {
   
   }
   
-
+// generates markdown for README file
   function generateMarkdown(data) {
     return `# ${data.title}
     ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
